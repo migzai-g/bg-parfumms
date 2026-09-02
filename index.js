@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { passive: true });
 
 
-  const btnMenu = document.querySelector('.fa-bars');
+  const btnMenu = document.querySelector('.btn-menu');
   const navMenu = document.querySelector('.menu-categorias');
 
 
@@ -36,18 +36,38 @@ document.addEventListener('DOMContentLoaded', () => {
     navMenu.classList.add('menu-aberto');
     overlay.classList.add('ativo');
     document.body.classList.add('no-scroll');
-    btnMenu.classList.replace('fa-bars', 'fa-xmark');
+    btnMenu.classList.remove('fa-bars');
+    btnMenu.classList.add('fa-xmark');
+    btnMenu.setAttribute('aria-expanded', 'true');
+    btnMenu.setAttribute('aria-label', 'Fechar menu');
   }
 
   function fecharMenu() {
     navMenu.classList.remove('menu-aberto');
     overlay.classList.remove('ativo');
     document.body.classList.remove('no-scroll');
-    btnMenu.classList.replace('fa-xmark', 'fa-bars');
+    btnMenu.classList.remove('fa-xmark');
+    btnMenu.classList.add('fa-bars');
+    btnMenu.setAttribute('aria-expanded', 'false');
+    btnMenu.setAttribute('aria-label', 'Abrir menu');
   }
 
-  btnMenu.addEventListener('click', () => {
+  btnMenu.setAttribute('role', 'button');
+  btnMenu.setAttribute('tabindex', '0');
+  btnMenu.setAttribute('aria-expanded', 'false');
+  btnMenu.setAttribute('aria-label', 'Abrir menu');
+
+  function alternarMenu() {
     navMenu.classList.contains('menu-aberto') ? fecharMenu() : abrirMenu();
+  }
+
+  btnMenu.addEventListener('click', alternarMenu);
+
+  btnMenu.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      alternarMenu();
+    }
   });
 
   overlay.addEventListener('click', fecharMenu);
