@@ -1,6 +1,4 @@
 const produtosFemininos = [
-    { nome: "Bade Al Oud Amethyst", imagem: "assets/Badee-Al-Oud-Amethyst-1.webp", preco: "299,00" },
-    { nome: "Honor & Glory", imagem: "assets/honorandglory.webp", preco: "299,00" },
     { nome: "Fakhar Rose", imagem: "assets/j0l66.jpg", preco: "279,00" },
     { nome: "Sabah Al Ward", imagem: "assets/sabahalward.webp", preco: "249,00" },
     { nome: "Durrat Love", imagem: "assets/durratlove.webp", preco: "349,00" },
@@ -8,12 +6,13 @@ const produtosFemininos = [
     { nome: "Shagaf Al Ward", imagem: "assets/shagaf.webp", preco: "248,00" },
     { nome: "Sabah Sugar", imagem: "assets/sabahsugar.jpg", preco: "249,00" },
     { nome: "Eclaire", imagem: "assets/eclaire.jpg", preco: "289,00" },
-    { nome: "Sisterland Yum Yum", imagem: "assets/yumyum.webp", preco: "349,00" },
+    { nome: "Yum Yum", imagem: "assets/yumyum.webp", preco: "349,00" },
     { nome: "Sabah Delilah", imagem: "assets/sabahdelilah.webp", preco: "349,00" },
     { nome: "Yara", imagem: "assets/yara.jpg", preco: "279,00" },
     { nome: "Yara Candy", imagem: "assets/yaracandy.webp", preco: "249,00" },
     { nome: "Yara Elixir", imagem: "assets/yara1.jpg", preco: "349,00" },
-    { nome: "Marshmallow Blush", imagem: "assets/marshmallow.jpg", preco: "339,00" }
+    { nome: "Marshmallow Blush", imagem: "assets/marshmallow.jpg", preco: "339,00" },
+    { nome: "Ameerati", imagem: "assets/masculinos/Ameerati.jpg" }
 ];
 
 function montarCardsProdutos() {
