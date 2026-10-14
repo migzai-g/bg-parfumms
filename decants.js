@@ -1,56 +1,39 @@
-
-
 const produtosDecants = [
-    { nome: "La Vie Est Belle", imagem: "assets/decants/La_Vie_Est_Belle.webp" },
-    { nome: "Ultra Male", imagem: "assets/decants/Ultra_Male.webp" },
-    { nome: "Le Male Elixir", imagem: "assets/decants/Le_Male_Elixir.jpg" },
-    { nome: "Le Beau Le Parfum", imagem: "assets/decants/Le_Beau_Le_Parfum.jfif" },
-    { nome: "212 VIP Black", imagem: "assets/decants/212_VIP_Black.webp" },
-    { nome: "212 Elixir", imagem: "assets/decants/212_Elixir.webp" },
-    { nome: "212 VIP Rosé", imagem: "assets/decants/212_VIP_Rosé.jpg" },
-
-    { nome: "Fakhar Rose", imagem: "assets/decants/j0l66.jpg" },
-    { nome: "Sabah Al Ward", imagem: "assets/decants/sabahalward.webp"},
-    { nome: "Durrat Love", imagem: "assets/decants/durratlove.webp" },
-    { nome: "Durrat Al Aroos", imagem: "assets/decants/durratalaroos.png" },
-    { nome: "Shagaf Al Ward", imagem: "assets/decants/shagaf.webp" },
-    { nome: "Sabah Sugar", imagem: "assets/decants/sabahsugar.jpg" },
-    { nome: "Eclaire", imagem: "assets/decants/eclaire.jpg" },
-    { nome: "Yum Yum", imagem: "assets/decants/yumyum.webp" },
-    { nome: "Sabah Delilah", imagem: "assets/decants/sabahdelilah.webp" },
-    { nome: "Yara", imagem: "assets/decants/yara.jpg" },
-    { nome: "Yara Candy", imagem: "assets/decants/yaracandy.webp" },
-    { nome: "Yara Elixir", imagem: "assets/decants/yara1.jpg" },
-    { nome: "Marshmallow Blush", imagem: "assets/decants/marshmallow.jpg" },
-    { nome: "Ameerati", imagem: "assets/decants/Ameerati.jpg" },
-
-    { nome: "Bade Al Oud Amethyst", imagem: "assets/decants/Badee-Al-Oud-Amethyst-1.webp"},
-    { nome: "Honor & Glory", imagem: "assets/decants/honorandglory.webp" },
-    { nome: "Salvo", imagem: "assets/decants/Salvo.jpg" },
-    { nome: "Opulent Dubai", imagem: "assets/decants/Opulent_Dubai.jpg" },
-    { nome: "Habik", imagem: "assets/decants/Habik.webp" },
-    { nome: "Alpine Homme Sport", imagem: "assets/decants/Alpine_Homme_Sport.jpg" },
-    { nome: "Fakhar Black", imagem: "assets/decants/Fakhar_Black.webp" },
-    { nome: "Fakhar Platinum", imagem: "assets/decants/Fakhar_Platinum.jpg" },
-    { nome: "Club 6 Voyage", imagem: "assets/masculinos/Club_6.webp" },
-    { nome: "His Confession", imagem: "assets/decants/His_Confession.jpg" },
-    { nome: "Pisa", imagem: "assets/decants/Pisa.jpg" },
-    { nome: "World Cup", imagem: "assets/decants/World_Cup.jpg" },
-    { nome: "Khamrah Qahwa", imagem: "assets/decants/Khamrah_Qahwa.webp" },
-    { nome: "Spectre Ghost", imagem: "assets/decants/Ghost.webp" },
-    { nome: "Attar Al Wesal", imagem: "assets/decants/Attar_Al_Wesal.jpg" },
-    { nome: "Club de Nuit", imagem: "assets/decants/Club_de_Nuit.jpg" },
-    { nome: "Qaed Al Fursan", imagem: "assets/masculinos/Qaed_Al_Fursan.jpg" },
-    { nome: "Asad", imagem: "assets/decants/Asad.jpg" },
-    { nome: "Asad Bourbon", imagem: "assets/decants/Asad_Bourbon.jpg" },
-    { nome: "Asad Elixir", imagem: "assets/decants/Asad_Elixir.jpg" },
-    { nome: "Qaed Al Fursan Unlimited", imagem: "assets/decants/Qaed_Al_Fursan_Unlimited.jpg" },
-    { nome: "Rayhaan Elixir", imagem: "assets/masculinos/Rayhaan.jpg" },
-    { nome: "Eqaab", imagem: "assets/masculinos/Elixir_Eqaab.png" },
-    { nome: "Fakhar Gold", imagem: "assets/decants/Fakhar_Gold.webp" },
-    { nome: "Cebolinha", imagem: "assets/masculinos/Cebola.jpg" }
-    
-
+    { nome: "Opulent Dubai", imagem: "assets/decants-5ml/opulent-dubai.jpg", detalhes: "Decant 5ml", preco: "29,99" },
+    { nome: "Royal Amber", imagem: "assets/decants-5ml/royal-amber.jpg", detalhes: "Decant 5ml", preco: "54,99" },
+    { nome: "Fakhar Black", imagem: "assets/decants-5ml/fakhar-black.jpg", detalhes: "Decant 5ml", preco: "34,99" },
+    { nome: "Bade'e Al Oud Amethyst", imagem: "assets/decants-5ml/bade-al-oud-amethyst.jpg", detalhes: "Decant 5ml", preco: "34,99" },
+    { nome: "Bade'e Al Oud Honor & Glory", imagem: "assets/decants-5ml/bade-al-oud-honor-glory.jpg", detalhes: "Decant 5ml", preco: "34,99" },
+    { nome: "Habik", imagem: "assets/decants-5ml/habik.jpg", detalhes: "Decant 5ml", preco: "39,99" },
+    { nome: "Alpine Homme Sport", imagem: "assets/decants-5ml/alpine-homme-sport.jpg", detalhes: "Decant 5ml", preco: "29,99" },
+    { nome: "Fakhar Platin", imagem: "assets/decants-5ml/fakhar-platin.jpg", detalhes: "Decant 5ml", preco: "34,99" },
+    { nome: "Fakhar Gold", imagem: "assets/decants-5ml/fakhar-gold.jpg", detalhes: "Decant 5ml", preco: "34,99" },
+    { nome: "Fakhar Rose", imagem: "assets/decants-5ml/fakhar-rose.jpg", detalhes: "Decant 5ml", preco: "34,99" },
+    { nome: "Mishlah", imagem: "assets/decants-5ml/mishlah.jpg", detalhes: "Decant 5ml", preco: "34,99" },
+    { nome: "Sabah Al Ward", imagem: "assets/decants-5ml/sabah-al-ward.jpg", detalhes: "Decant 5ml", preco: "29,99" },
+    { nome: "Durrat Love", imagem: "assets/decants-5ml/durrat-love.jpg", detalhes: "Decant 5ml", preco: "39,99" },
+    { nome: "Sabah Delilah", imagem: "assets/decants-5ml/sabah-delilah.jpg", detalhes: "Decant 5ml", preco: "39,99" },
+    { nome: "Marshmallow Blush", imagem: "assets/decants-5ml/marshmallow-blush.jpg", detalhes: "Decant 5ml", preco: "39,99" },
+    { nome: "Ameerati", imagem: "assets/decants-5ml/ameerati.jpg", detalhes: "Decant 5ml", preco: "29,99" },
+    { nome: "Eclaire", imagem: "assets/decants-5ml/eclaire.jpg", detalhes: "Decant 5ml", preco: "34,99" },
+    { nome: "Sabah Sugar", imagem: "assets/decants-5ml/sabah-sugar.jpg", detalhes: "Decant 5ml", preco: "29,99" },
+    { nome: "Durrat Al Aroos", imagem: "assets/decants-5ml/durrat-al-aroos.jpg", detalhes: "Decant 5ml", preco: "29,99" },
+    { nome: "Shagaf Al Ward", imagem: "assets/decants-5ml/shagaf-al-ward.jpg", detalhes: "Decant 5ml", preco: "29,99" },
+    { nome: "His Confession", imagem: "assets/decants-5ml/his-confession.jpg", detalhes: "Decant 5ml", preco: "39,99" },
+    { nome: "Yum Yum", imagem: "assets/decants-5ml/yum-yum.jpg", detalhes: "Decant 5ml", preco: "44,99" },
+    { nome: "Pisa", imagem: "assets/decants-5ml/pisa.jpg", detalhes: "Decant 5ml", preco: "44,99" },
+    { nome: "Eqaab", imagem: "assets/decants-5ml/eqaab.jpg", detalhes: "Decant 5ml", preco: "29,99" },
+    { nome: "Attar Al Wesal", imagem: "assets/decants-5ml/attar-al-wesal.jpg", detalhes: "Decant 5ml", preco: "29,99" },
+    { nome: "Qaed Al Fursan Unlimited", imagem: "assets/decants-5ml/qaed-al-fursan-unlimited.jpg", detalhes: "Decant 5ml", preco: "29,99" },
+    { nome: "Yara Candy", imagem: "assets/decants-5ml/yara-candy.jpg", detalhes: "Decant 5ml", preco: "29,99" },
+    { nome: "Yara", imagem: "assets/decants-5ml/yara.jpg", detalhes: "Decant 5ml", preco: "29,99" },
+    { nome: "Yara Elixir", imagem: "assets/decants-5ml/yara-elixir.jpg", detalhes: "Decant 5ml", preco: "39,99" },
+    { nome: "Yara Moi", imagem: "assets/decants-5ml/yara-moi.jpg", detalhes: "Decant 5ml", preco: "29,99" },
+    { nome: "Asad Elixir", imagem: "assets/decants-5ml/asad-elixir.jpg", detalhes: "Decant 5ml", preco: "39,99" },
+    { nome: "Khamrah Qahwa", imagem: "assets/decants-5ml/khamrah-qahwa.jpg", detalhes: "Decant 5ml", preco: "34,99" },
+    { nome: "Spectre Ghost", imagem: "assets/decants-5ml/spectre-ghost.jpg", detalhes: "Decant 5ml", preco: "44,99" },
+    { nome: "No.2 Men", imagem: "assets/decants-5ml/no2-men.jpg", detalhes: "Decant 5ml", preco: "29,99" },
+    { nome: "World Cup", imagem: "assets/decants-5ml/world-cup.jpg", detalhes: "Decant 5ml", preco: "54,99" }
 ];
 
 function montarCardsProdutos() {
@@ -58,38 +41,40 @@ function montarCardsProdutos() {
     if (!grid) return;
 
     produtosDecants.forEach((produto) => {
+        const marcaProduto = produto.marca || "";
+        const detalhesProduto = produto.detalhes || "";
+        const precoProduto = produto.preco || "Sob consulta"; 
+        
+        const imgHtml = produto.imagem 
+            ? `<img src="${produto.imagem}" alt="Foto do frasco do perfume ${produto.nome}">` 
+            : `<i class="fa-solid fa-flask placeholder-icone"></i>`;
+
         const card = document.createElement("a");
-        card.href = "#";
+        card.href = "#"; 
         card.className = "produto-card";
         card.dataset.nome = produto.nome;
 
-        const imagemContainer = document.createElement("div");
-        imagemContainer.className = "produto-imagem";
+        card.innerHTML = `
+            <div class="produto-card-corners"></div>
+            
+            <div class="produto-imagem">
+                ${imgHtml}
+            </div>
 
-        if (produto.imagem) {
-            const img = document.createElement("img");
-            img.src = produto.imagem;
-            img.alt = `Foto do frasco do perfume ${produto.nome}`;
-            imagemContainer.appendChild(img);
-        } else {
-            const placeholder = document.createElement("i");
-            placeholder.className = "fa-solid fa-flask placeholder-icone";
-            imagemContainer.appendChild(placeholder);
-        }
-
-        const nome = document.createElement("span");
-        nome.className = "produto-nome";
-        nome.textContent = produto.nome;
-
-        card.appendChild(imagemContainer);
-        card.appendChild(nome);
-
-        if (produto.obs) {
-            const obs = document.createElement("span");
-            obs.className = "produto-obs";
-            obs.textContent = produto.obs;
-            card.appendChild(obs);
-        }
+            <div class="produto-info-detalhada">
+                ${marcaProduto ? `<span class="produto-brand">${marcaProduto}</span>` : ""}
+                <h3 class="produto-name-large">${produto.nome}</h3>
+                ${detalhesProduto ? `<span class="produto-details-italic">${detalhesProduto}</span>` : ""}
+                
+                <hr class="produto-divider">
+                
+                <span class="produto-price-label">PREÇO DE REFERÊNCIA</span>
+                <div class="produto-price-new">
+                    <span class="produto-currency">${produto.preco ? "R$" : ""}</span>
+                    <span class="produto-price-value">${precoProduto}</span>
+                </div>
+            </div>
+        `;
 
         grid.appendChild(card);
     });
