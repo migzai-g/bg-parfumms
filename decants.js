@@ -31,6 +31,9 @@ const produtosDecants = [
     { nome: "Yara Moi", imagem: "assets/decants-5ml/yara-moi.jpg", detalhes: "Decant 5ml", preco: "29,99" },
     { nome: "Asad Elixir", imagem: "assets/decants-5ml/asad-elixir.jpg", detalhes: "Decant 5ml", preco: "39,99" },
     { nome: "Khamrah Qahwa", imagem: "assets/decants-5ml/khamrah-qahwa.jpg", detalhes: "Decant 5ml", preco: "34,99" },
+    { nome: "Al Noble Ameer", imagem: "assets/decants-5ml/al-noble-ameer.jpg", detalhes: "Decant 5ml", preco: "34,99" },
+    { nome: "Khamrah Waha", imagem: "assets/decants-5ml/khamrah-waha.jpg", detalhes: "Decant 5ml", preco: "54,99" },
+    { nome: "Khamrah", imagem: "assets/decants-5ml/khamrah.jpg", detalhes: "Decant 5ml", preco: "34,99" },
     { nome: "Spectre Ghost", imagem: "assets/decants-5ml/spectre-ghost.jpg", detalhes: "Decant 5ml", preco: "44,99" },
     { nome: "No.2 Men", imagem: "assets/decants-5ml/no2-men.jpg", detalhes: "Decant 5ml", preco: "29,99" },
     { nome: "World Cup", imagem: "assets/decants-5ml/world-cup.jpg", detalhes: "Decant 5ml", preco: "54,99" }
